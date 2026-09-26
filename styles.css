@@ -504,6 +504,75 @@ footer > p {
   filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.12));
 }
 
+/* ---------- OA vision, mission and purpose ---------- */
+
+.oa-purpose {
+  margin: 50px 0 60px;
+  padding: 42px;
+  background: #efe5d1;
+}
+
+.oa-purpose > h2 {
+  margin-top: 0;
+}
+
+.oa-purpose > p {
+  color: #596158;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.vision-mission-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 16px;
+  margin: 32px 0 38px;
+}
+
+.oa-statement {
+  padding: 25px;
+  background: #fffaf0;
+  border-top: 5px solid var(--pine);
+}
+
+.oa-statement span {
+  color: var(--rust);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.oa-statement p {
+  margin: 10px 0 0;
+  color: var(--pine-dark);
+  font-family: Georgia, serif;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.oa-purpose h3 {
+  margin: 0 0 12px;
+  color: var(--pine-dark);
+  font-family: Georgia, serif;
+  font-size: 27px;
+}
+
+.purpose-list {
+  margin: 22px 0 0;
+  padding-left: 22px;
+}
+
+.purpose-list li {
+  margin: 0 0 16px;
+  padding-left: 8px;
+  color: #596158;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
 /* ---------- About content ---------- */
 
 .about-focus {
@@ -836,6 +905,14 @@ footer > p {
   .page-banner {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  .vision-mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .oa-purpose {
+    padding: 28px;
   }
 
   .about-banner,
