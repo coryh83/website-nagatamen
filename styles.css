@@ -234,3 +234,27 @@
   .about-patch{position:relative!important;left:auto!important;top:auto!important;width:100%!important;height:185px!important;margin:0 auto 18px!important}
   .about-patch img{width:300px!important;height:180px!important;min-width:0!important;min-height:0!important;max-width:100%!important;margin:auto!important}
 }
+
+/* Responsive Lodge banner typography and collision protection */
+.lodge-banner-copy{
+  max-width:calc(100% - 540px)!important;
+  width:auto!important;
+}
+.lodge-banner-copy h1{
+  font-size:clamp(42px,5.2vw,76px)!important;
+  line-height:1!important;
+  overflow-wrap:normal!important;
+}
+.lodge-banner-copy>p:last-child{
+  font-size:clamp(15px,1.35vw,18px)!important;
+  line-height:1.45!important;
+  max-width:100%!important;
+}
+@media(max-width:1050px){
+  .lodge-banner-copy{max-width:52%!important}
+  .lodge-banner-copy h1{font-size:clamp(38px,5vw,58px)!important}
+}
+@media(max-width:800px){
+  .lodge-banner-copy{max-width:100%!important;width:100%!important}
+  .lodge-banner-copy h1{font-size:clamp(40px,11vw,58px)!important}
+}
