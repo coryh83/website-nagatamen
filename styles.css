@@ -188,3 +188,49 @@
     transform:none!important;
   }
 }
+
+/* About patch: match Lodge hawk scale and overlap treatment */
+.page-banner.about-banner{
+  position:relative!important;
+  display:block!important;
+  min-height:275px!important;
+  padding:47.5px max(7vw,28px)!important;
+  overflow:visible!important;
+}
+.about-banner-copy{
+  position:relative!important;
+  z-index:2!important;
+  margin-left:520px!important;
+  min-width:0!important;
+}
+.about-patch{
+  position:absolute!important;
+  z-index:1!important;
+  left:10px!important;
+  top:5px!important;
+  width:600px!important;
+  height:330px!important;
+  max-width:none!important;
+  max-height:none!important;
+  margin:0!important;
+  overflow:visible!important;
+  display:block!important;
+}
+.about-patch img{
+  position:static!important;
+  display:block!important;
+  width:600px!important;
+  height:330px!important;
+  max-width:none!important;
+  max-height:none!important;
+  min-width:600px!important;
+  min-height:330px!important;
+  object-fit:contain!important;
+  margin:0!important;
+}
+@media(max-width:800px){
+  .page-banner.about-banner{padding:38px 28px 30px!important;text-align:center!important}
+  .about-banner-copy{margin-left:0!important}
+  .about-patch{position:relative!important;left:auto!important;top:auto!important;width:100%!important;height:185px!important;margin:0 auto 18px!important}
+  .about-patch img{width:300px!important;height:180px!important;min-width:0!important;min-height:0!important;max-width:100%!important;margin:auto!important}
+}
