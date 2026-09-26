@@ -166,3 +166,10 @@
   .lodge-hawk{right:auto!important;width:100%!important;height:185px!important}
   .lodge-hawk img{width:300px!important;height:180px!important;min-width:0!important;min-height:0!important}
 }
+
+/* Lodge banner height adjustment — hawk size unchanged */
+.page-banner.lodge-banner{
+  min-height:275px!important;
+  padding-top:47.5px!important;
+  padding-bottom:47.5px!important;
+}
