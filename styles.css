@@ -38,3 +38,5 @@
  .about-patch{width:100%!important;height:170px!important}
  .about-patch img{width:170px!important;max-width:170px!important;height:170px!important;max-height:170px!important}
 }
+
+.lodge-banner{display:grid;grid-template-columns:minmax(0,1fr) 300px;align-items:center;gap:55px;min-height:300px;padding-top:42px;padding-bottom:42px}.lodge-banner-copy{min-width:0}.lodge-hawk{width:300px;height:220px;display:flex;align-items:center;justify-content:center}.lodge-hawk img{display:block;width:280px;max-width:280px;height:200px;max-height:200px;object-fit:contain}@media(max-width:800px){.lodge-banner{grid-template-columns:1fr;gap:18px;text-align:center}.lodge-hawk{width:100%;height:150px}.lodge-hawk img{width:220px;max-width:220px;height:145px;max-height:145px;object-fit:contain}}
