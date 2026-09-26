@@ -80,3 +80,26 @@
   .lodge-hawk{flex:0 0 135px!important;width:220px!important;height:135px!important}
   .lodge-hawk img{width:210px!important;height:130px!important;max-width:210px!important;max-height:130px!important}
 }
+
+/* Lodge hawk intentional banner overlap */
+.page-banner.lodge-banner{overflow:visible!important;position:relative!important}
+.lodge-hawk{
+  flex:0 0 330px!important;
+  width:330px!important;
+  height:220px!important;
+  max-width:none!important;
+  max-height:none!important;
+  overflow:visible!important;
+  margin-right:-75px!important;
+}
+.lodge-hawk img{
+  width:360px!important;
+  height:220px!important;
+  max-width:360px!important;
+  max-height:220px!important;
+  object-fit:contain!important;
+}
+@media(max-width:800px){
+  .lodge-hawk{flex:0 0 155px!important;width:260px!important;height:155px!important;margin-right:0!important}
+  .lodge-hawk img{width:250px!important;height:150px!important;max-width:250px!important;max-height:150px!important}
+}
