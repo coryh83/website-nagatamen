@@ -103,3 +103,49 @@
   .lodge-hawk{flex:0 0 155px!important;width:260px!important;height:155px!important;margin-right:0!important}
   .lodge-hawk img{width:250px!important;height:150px!important;max-width:250px!important;max-height:150px!important}
 }
+
+/* Lodge hawk direct positioning */
+.page-banner.lodge-banner{
+  position:relative!important;
+  display:block!important;
+  min-height:300px!important;
+  padding:60px max(7vw,28px)!important;
+  overflow:visible!important;
+}
+.lodge-banner-copy{
+  position:relative!important;
+  z-index:2!important;
+  max-width:58%!important;
+}
+.lodge-hawk{
+  position:absolute!important;
+  z-index:1!important;
+  right:-110px!important;
+  top:50%!important;
+  transform:translateY(-50%)!important;
+  width:520px!important;
+  height:300px!important;
+  max-width:none!important;
+  max-height:none!important;
+  margin:0!important;
+  overflow:visible!important;
+  display:block!important;
+}
+.lodge-hawk img{
+  position:static!important;
+  display:block!important;
+  width:520px!important;
+  height:300px!important;
+  max-width:none!important;
+  max-height:none!important;
+  min-width:520px!important;
+  min-height:300px!important;
+  object-fit:contain!important;
+  margin:0!important;
+}
+@media(max-width:800px){
+  .page-banner.lodge-banner{padding:38px 28px 30px!important;text-align:center!important}
+  .lodge-banner-copy{max-width:100%!important}
+  .lodge-hawk{position:relative!important;right:auto!important;top:auto!important;transform:none!important;width:100%!important;height:175px!important;margin:18px auto -15px!important}
+  .lodge-hawk img{width:280px!important;height:170px!important;min-width:0!important;min-height:0!important;max-width:100%!important;margin:auto!important}
+}
