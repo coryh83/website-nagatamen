@@ -230,6 +230,13 @@ footer > p {
   margin-top: 35px;
 }
 
+.text-link {
+  color: var(--rust);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* ---------- Home ---------- */
 
 .page-home {
