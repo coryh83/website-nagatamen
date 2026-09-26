@@ -173,3 +173,18 @@
   padding-top:47.5px!important;
   padding-bottom:47.5px!important;
 }
+
+/* Lodge hawk: anchor 5px below banner top and allow bottom overlap */
+.page-banner.lodge-banner{
+  overflow:visible!important;
+}
+.lodge-hawk{
+  top:5px!important;
+  transform:none!important;
+}
+@media(max-width:800px){
+  .lodge-hawk{
+    top:auto!important;
+    transform:none!important;
+  }
+}
