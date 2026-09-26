@@ -258,3 +258,26 @@
   .lodge-banner-copy{max-width:100%!important;width:100%!important}
   .lodge-banner-copy h1{font-size:clamp(40px,11vw,58px)!important}
 }
+
+/* Lodge banner true fluid desktop typography */
+.lodge-banner-copy{
+  width:calc(100% - 600px)!important;
+  max-width:calc(100% - 600px)!important;
+}
+.lodge-banner-copy h1{
+  font-size:clamp(38px,calc(2vw + 20px),66px)!important;
+  line-height:1!important;
+  white-space:normal!important;
+}
+.lodge-banner-copy>p:last-child{
+  font-size:clamp(14px,calc(.35vw + 10px),18px)!important;
+  line-height:1.4!important;
+}
+@media(max-width:1200px){
+  .lodge-banner-copy{width:48%!important;max-width:48%!important}
+  .lodge-banner-copy h1{font-size:clamp(36px,4vw,48px)!important}
+}
+@media(max-width:800px){
+  .lodge-banner-copy{width:100%!important;max-width:100%!important}
+  .lodge-banner-copy h1{font-size:clamp(38px,10vw,52px)!important}
+}
