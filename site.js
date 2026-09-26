@@ -1,7 +1,26 @@
 const CALENDAR_FEED = "https://script.google.com/macros/s/AKfycbzAbv9V2sOCztKziGlSFVFz7oQauEe6Vq1L-KiAwYVKHoHZmo6TzI0hvQfUa3vDRNsI/exec";
 const TIME_ZONE = "America/New_York";
 
-const posts=[{tag:"CHAPTER NEWS",title:"Welcome to the New Nagatamen Drumbeat",text:"This new chapter site will make it easier to keep Arrowmen connected with events, service opportunities and chapter news.",date:"September 25, 2026"},{tag:"SERVICE",title:"Eagle Project Perpetual Care",text:"Our chapter continues its commitment to maintaining Eagle Scout projects throughout the district.",date:"September 2026"},{tag:"EVENTS",title:"See What's Coming Up",text:"Chapter meetings, service projects and lodge events will appear here automatically from our calendar.",date:"September 2026"}];
+const posts = [
+  {
+    tag: "CHAPTER NEWS",
+    title: "Welcome to the New Nagatamen Drumbeat",
+    text: "This new chapter site will make it easier to keep Arrowmen connected with events, service opportunities and chapter news.",
+    date: "September 25, 2026"
+  },
+  {
+    tag: "SERVICE",
+    title: "Eagle Project Perpetual Care",
+    text: "Our chapter continues its commitment to maintaining Eagle Scout projects throughout the district.",
+    date: "September 2026"
+  },
+  {
+    tag: "EVENTS",
+    title: "See What's Coming Up",
+    text: "Chapter meetings, service projects and lodge events will appear here automatically from our calendar.",
+    date: "September 2026"
+  }
+];
 
 const eventGrid=document.querySelector("#event-grid");
 const filters=document.querySelector("#event-filters");
