@@ -26,3 +26,5 @@
 /* Preserve full slideshow photos without cropping */
 .home-slideshow{background:#18231c}
 .home-slideshow .slide{object-fit:contain!important;object-position:center!important}
+
+.about-banner{display:grid;grid-template-columns:minmax(220px,340px) minmax(0,1fr);align-items:center;gap:clamp(35px,6vw,90px);padding-top:45px;padding-bottom:45px}.about-patch{display:flex;align-items:center;justify-content:center}.about-patch img{display:block;width:100%;max-width:320px;height:auto;filter:drop-shadow(0 8px 10px rgba(0,0,0,.12))}.about-banner-copy{min-width:0}.about-banner-copy>p:last-child{font-family:Georgia,serif;font-size:18px;color:#62685e;margin-bottom:0}@media(max-width:800px){.about-banner{grid-template-columns:1fr;text-align:center;gap:20px}.about-patch img{max-width:240px}}
