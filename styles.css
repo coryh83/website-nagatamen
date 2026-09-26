@@ -22,3 +22,7 @@
 .home-slideshow .slide{position:absolute!important;inset:0!important;display:block!important;width:100%!important;height:100%!important;max-width:none!important;margin:0!important;object-fit:cover;object-position:center;opacity:0;visibility:hidden;transition:opacity .7s ease}
 .home-slideshow .slide.active{opacity:1;visibility:visible}
 @media(max-width:800px){.home-slideshow{min-height:360px;height:360px;margin:0}}
+
+/* Preserve full slideshow photos without cropping */
+.home-slideshow{background:#18231c}
+.home-slideshow .slide{object-fit:contain!important;object-position:center!important}
