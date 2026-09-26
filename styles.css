@@ -149,3 +149,20 @@
   .lodge-hawk{position:relative!important;right:auto!important;top:auto!important;transform:none!important;width:100%!important;height:175px!important;margin:18px auto -15px!important}
   .lodge-hawk img{width:280px!important;height:170px!important;min-width:0!important;min-height:0!important;max-width:100%!important;margin:auto!important}
 }
+
+/* Lodge hawk placement refinement */
+.lodge-hawk{
+  right:10px!important;
+  width:600px!important;
+  height:330px!important;
+}
+.lodge-hawk img{
+  width:600px!important;
+  height:330px!important;
+  min-width:600px!important;
+  min-height:330px!important;
+}
+@media(max-width:800px){
+  .lodge-hawk{right:auto!important;width:100%!important;height:185px!important}
+  .lodge-hawk img{width:300px!important;height:180px!important;min-width:0!important;min-height:0!important}
+}
