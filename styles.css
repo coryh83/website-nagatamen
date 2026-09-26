@@ -362,6 +362,58 @@ footer > p {
   line-height: 1.7;
 }
 
+.home-intro > h3 {
+  margin: 42px 0 20px;
+  color: var(--pine-dark);
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+.home-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.home-focus {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 16px;
+  padding: 28px;
+  background: #fffaf0;
+  border-top: 5px solid var(--pine);
+}
+
+.focus-number {
+  color: var(--rust);
+  font-family: Georgia, serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.home-focus h4 {
+  margin: 2px 0 14px;
+  color: var(--pine-dark);
+  font-family: Georgia, serif;
+  font-size: 25px;
+}
+
+.home-focus p {
+  margin: 0 0 18px;
+  color: #596158;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.home-focus a {
+  color: var(--rust);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
 .home-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -719,7 +771,8 @@ footer > p {
     height: 48px;
   }
 
-  .home-links {
+  .home-links,
+  .home-focus-grid {
     grid-template-columns: 1fr;
   }
 
