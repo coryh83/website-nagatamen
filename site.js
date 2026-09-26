@@ -89,3 +89,24 @@ if(postsGrid) postsGrid.innerHTML=posts.map(p=>`<article class="post"><span clas
 
 const menu=document.querySelector(".menu");
 if(menu) menu.addEventListener("click",()=>document.querySelector(".site-header nav")?.classList.toggle("open"));
+
+
+const slideshow=document.querySelector("#home-slideshow");
+if(slideshow){
+  const slides=[...slideshow.querySelectorAll(".slide")];
+  const dots=[...slideshow.querySelectorAll(".slide-dots button")];
+  let current=0;
+  let timer;
+  const show=index=>{
+    current=(index+slides.length)%slides.length;
+    slides.forEach((slide,i)=>slide.classList.toggle("active",i===current));
+    dots.forEach((dot,i)=>dot.classList.toggle("active",i===current));
+  };
+  const restart=()=>{clearInterval(timer);timer=setInterval(()=>show(current+1),5500);};
+  slideshow.querySelector(".prev").addEventListener("click",()=>{show(current-1);restart();});
+  slideshow.querySelector(".next").addEventListener("click",()=>{show(current+1);restart();});
+  dots.forEach((dot,i)=>dot.addEventListener("click",()=>{show(i);restart();}));
+  slideshow.addEventListener("mouseenter",()=>clearInterval(timer));
+  slideshow.addEventListener("mouseleave",restart);
+  restart();
+}
